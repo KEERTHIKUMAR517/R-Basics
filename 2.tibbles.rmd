@@ -1,0 +1,87 @@
+---
+title: "Vector missing values"
+output: html_notebook
+---
+
+
+
+```{r}
+x<- c(0.5, NA, 0.7 )
+
+
+```
+
+
+```{r}
+data.frame(Name =c("jack", "balck"),Age =c(19,20),Hair = c("brown","pink")) 
+
+```
+
+
+with tibble
+
+
+```{r}
+tibble(
+  x = 1:5,
+  y = c(1,3,5,7,9),
+  z = x^2+y
+
+)
+```
+
+
+without tibble 
+
+```{r}
+df <- data.frame(
+  x= 1:5,
+  y= rep(1,5)
+  
+)
+cbind(df,df$x^2+df$y)
+```
+
+
+
+```{r}
+tibble(
+  `:)` ="smile",
+  ` ` = "space",
+  `2000` = "number"
+) ->x
+```
+
+```{r}
+data.frame(
+  X<-(x=1:5),
+  Y<-(y = rep(1,5))
+)
+ z = (X^2+Y) 
+```
+
+
+```{r}
+Z<-data.frame(
+  z = (X^2+Y)
+)
+cbind(X,Y,Z)
+
+```
+
+using TRIBBLE
+
+```{r}
+tribble(
+~x,~y,~z,
+#--/--/---
+"A",1.567,T,
+"B",13,F,
+"C",1.4598745698,T
+)
+```
+
+```{r}
+tibble()
+```
+

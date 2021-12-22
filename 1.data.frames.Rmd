@@ -1,0 +1,48 @@
+---
+title: "data frames"
+output: html_notebook
+---
+
+```{r}
+
+```
+
+
+```{r}
+data.frame( id = letters[1:10],x = 1:10, y = 11:20) ->df
+
+df
+
+```
+
+
+
+
+```{r}
+data.frame(
+Name =c("john", "Bob"),
+Age = c(35,40),
+Hair =c("brown","black"),
+Married =c(T,F)
+)
+
+```
+
+
+```{r}
+tail(df,n =5)
+
+```
+
+```{r}
+head(df,n =2) ->hd
+hd
+rownames(hd)
+```
+
+
+```{r}
+```
+
+
+
